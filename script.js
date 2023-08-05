@@ -1,2 +1,2 @@
-const urlSpace = document.getElementById("container);
-                                         
+const urlSpace = document.getElementById("link");
+const buttonEnter = document.getElementById("")                                         
