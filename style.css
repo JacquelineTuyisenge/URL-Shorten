@@ -1,21 +1,26 @@
+body {
+    background-color: grey;
+}
+
 img {
-    width: 15px;
-    height: 5px;
-    margin: 2px;
+    width: 60px;
+    height: 20px;
+    margin: 7px;
 }
 
 #container {
     background-color: beige;
     border: 5px brown solid;
     text-align: center;
+    margin: 100px;
+    padding: 5px;
 }
 
 #link {
-    border:2px dark solid;
+    border:2px green solid;
 }
 
 #enter {
     background-color: red;
-    hover: yellow;
-    border: 2px;
+    border:2px black solid;
 }
