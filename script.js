@@ -1,4 +1,4 @@
-const urlSpace = document.getElementById("link");
-const buttonEnter = document.getElementById("enter");
-function buttonEnter('click' => {
-  if (urlSpace = (" ") && urlSpace = 
+let urlText = document.getElementById("link");
+let enterButton = document.getElementById("enter");
+
+enterButton.addEventListener('click', buttonClicked);
