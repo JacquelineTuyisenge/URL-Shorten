@@ -3,6 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const linkInput = document.getElementById('link');
     const errorMessage = document.getElementById('error-message');
     const shortenedLinksList = document.getElementById('shortened-links');
+    const shortUrlContainer = document.getElementById('shortened-url');
+    const shortUrlText = document.getElementById('short-url');
+    const copyShortUrlButton = document.getElementById('copy-short-url');
 
     urlForm.addEventListener('submit', (event) => {
 	event.preventDefault();
@@ -13,7 +16,27 @@ document.addEventListener('DOMContentLoaded', () => {
 	    errorMessage.textContent = 'please enter a URL';
 	    return;
 	}
+        
+	try {
+      const response = await fetch(`https://api.tinyurl.com/dev/api?url=${encodeURIComponent(url)}`);
+      const data = await response.json();
 
+      if (response.ok) {
+        const shortUrl = data.tiny_url;
+        shortUrlText.textContent = shortUrl;
+        shortUrlContainer.style.display = 'block';
+      } else {
+        errorMessage.textContent = 'Error shortening the URL.';
+      }
+    } catch (error) {
+      console.error('An error occurred:', error);
+    }
+  });
+
+  copyShortUrlButton.addEventListener('click', () => {
+    const shortUrl = shortUrlText.textContent;
+    copyToClipboard(shortUrl);
+  });
 	const shortenedUrl = shortenUrl(url);
 
 	addShortenedLink(url, shortenedUrl);
