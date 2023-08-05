@@ -11,12 +11,13 @@
   </header>
   <div id="container">
     <h1>Shorten Url</h1>
-    <form>
-      <label>Paste long url here</label>
-        <input type="text" id="link">
-      <button id="enter">ENTER</button>
+    <form id="url-form">
+      <label for="link">Paste Long URL here</label>
+        <input type="text" id="link" required>
+      <button id="enter">Shorten</button>
+      <p id="error-message" class="error-message">
     </form>
-    <br>
+    <ul id="shortened-links"></ul>
   </div>
   <script defer src="script.js"></script>
 </body>
