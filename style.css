@@ -1,2 +1,21 @@
+header {
+    width: 15px;
+    height: 5px;
+    margin: 2px;
+}
+
 #container {
-  
+    background-color: beige;
+    border: 5px brown solid;
+    text-align: center;
+}
+
+#link {
+    border:2px dark solid;
+}
+
+#enter {
+    background-color: red;
+    hover: yellow;
+    border: 2px;
+}
