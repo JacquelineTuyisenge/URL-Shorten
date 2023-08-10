@@ -2,7 +2,8 @@
 }
 
 body {
-    background-color: grey;
+    background-color: rgb(135, 58, 134);
+    font-weight:bold;
     text-align: center;
     display: block;
     margin: 100px;
@@ -12,18 +13,12 @@ body {
 
 #theurl {
     background-color: beige;
-    border: 2px brown solid;
+    border: 20px brown solid;
     text-align: center;
 }
 #shorten {
     background-color: green;
-    border: 2px black solid;
+    border: 20px black solid;
     color: black;
-    text-align: center;
-}
-
-#header.container {
-    background-color: beige;
-    border: 5px brown solid;
     text-align: center;
 }
