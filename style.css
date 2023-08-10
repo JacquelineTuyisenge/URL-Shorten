@@ -3,7 +3,11 @@
 
 body {
     background-color: grey;
+    text-align: center;
     display: block;
+    margin: 100px;
+    padding: 40px;
+
 }
 
 #theurl {
@@ -12,7 +16,7 @@ body {
     text-align: center;
 }
 #shorten {
-    background-color: red;
+    background-color: green;
     border: 2px black solid;
     color: black;
     text-align: center;
@@ -22,6 +26,4 @@ body {
     background-color: beige;
     border: 5px brown solid;
     text-align: center;
-    margin: 100px;
-    padding: 5px;
 }
